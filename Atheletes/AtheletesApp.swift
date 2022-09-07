@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AtheletesApp: App {
+    let viewModelFactory: ViewModelFactory = ViewModelFactory()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: viewModelFactory.loginViewModel())
         }
     }
 }

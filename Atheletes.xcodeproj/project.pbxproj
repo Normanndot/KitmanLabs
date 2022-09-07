@@ -14,6 +14,28 @@
 		8151D2E228C7486F00DEC3FB /* AtheletesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D2E128C7486F00DEC3FB /* AtheletesTests.swift */; };
 		8151D2EC28C7486F00DEC3FB /* AtheletesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D2EB28C7486F00DEC3FB /* AtheletesUITests.swift */; };
 		8151D2EE28C7486F00DEC3FB /* AtheletesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D2ED28C7486F00DEC3FB /* AtheletesUITestsLaunchTests.swift */; };
+		8151D2FB28C752E000DEC3FB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D2FA28C752E000DEC3FB /* LoginView.swift */; };
+		8151D2FD28C7574900DEC3FB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D2FC28C7574900DEC3FB /* LoginViewModel.swift */; };
+		8151D2FF28C7592900DEC3FB /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D2FE28C7592900DEC3FB /* PasswordField.swift */; };
+		8151D30328C7FAF200DEC3FB /* UserNameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30228C7FAF200DEC3FB /* UserNameField.swift */; };
+		8151D30628C7FDE100DEC3FB /* AthletesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30528C7FDE100DEC3FB /* AthletesView.swift */; };
+		8151D30C28C8FD2F00DEC3FB /* AtheleteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */; };
+		8151D30E28C90E5700DEC3FB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30D28C90E5700DEC3FB /* NetworkService.swift */; };
+		8151D31028C90EBD00DEC3FB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30F28C90EBD00DEC3FB /* Request.swift */; };
+		8151D31228C911D900DEC3FB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31128C911D900DEC3FB /* HTTPMethod.swift */; };
+		8151D31428C9178800DEC3FB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31328C9178800DEC3FB /* RequestError.swift */; };
+		8151D31728C9202B00DEC3FB /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31628C9202B00DEC3FB /* URL+Extension.swift */; };
+		8151D31928C9207E00DEC3FB /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31828C9207E00DEC3FB /* APIConstants.swift */; };
+		8151D31D28C9222C00DEC3FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31C28C9222C00DEC3FB /* User.swift */; };
+		8151D31F28C922B200DEC3FB /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31E28C922B200DEC3FB /* Requests.swift */; };
+		8151D32128C9246F00DEC3FB /* AthleteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32028C9246F00DEC3FB /* AthleteDetail.swift */; };
+		8151D32328C9278600DEC3FB /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32228C9278600DEC3FB /* SessionStorage.swift */; };
+		8151D32628C928CB00DEC3FB /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 8151D32528C928CB00DEC3FB /* SwiftKeychainWrapper */; };
+		8151D32828C929E600DEC3FB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32728C929E600DEC3FB /* AppState.swift */; };
+		8151D32A28C92A7900DEC3FB /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32928C92A7900DEC3FB /* AuthenticationService.swift */; };
+		8151D32C28C9303800DEC3FB /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */; };
+		81A5A77E28C93ED0003EC692 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A77D28C93ED0003EC692 /* LoginButton.swift */; };
+		81A5A78028C94B34003EC692 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A77F28C94B34003EC692 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +66,27 @@
 		8151D2E728C7486F00DEC3FB /* AtheletesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtheletesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8151D2EB28C7486F00DEC3FB /* AtheletesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtheletesUITests.swift; sourceTree = "<group>"; };
 		8151D2ED28C7486F00DEC3FB /* AtheletesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtheletesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8151D2FA28C752E000DEC3FB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8151D2FC28C7574900DEC3FB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8151D2FE28C7592900DEC3FB /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
+		8151D30228C7FAF200DEC3FB /* UserNameField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameField.swift; sourceTree = "<group>"; };
+		8151D30528C7FDE100DEC3FB /* AthletesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesView.swift; sourceTree = "<group>"; };
+		8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtheleteCardView.swift; sourceTree = "<group>"; };
+		8151D30D28C90E5700DEC3FB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8151D30F28C90EBD00DEC3FB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8151D31128C911D900DEC3FB /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8151D31328C9178800DEC3FB /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		8151D31628C9202B00DEC3FB /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		8151D31828C9207E00DEC3FB /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		8151D31C28C9222C00DEC3FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8151D31E28C922B200DEC3FB /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		8151D32028C9246F00DEC3FB /* AthleteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteDetail.swift; sourceTree = "<group>"; };
+		8151D32228C9278600DEC3FB /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
+		8151D32728C929E600DEC3FB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8151D32928C92A7900DEC3FB /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		81A5A77D28C93ED0003EC692 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		81A5A77F28C94B34003EC692 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8151D32628C928CB00DEC3FB /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +140,16 @@
 			children = (
 				8151D2D028C7486A00DEC3FB /* AtheletesApp.swift */,
 				8151D2D228C7486A00DEC3FB /* ContentView.swift */,
+				8151D31628C9202B00DEC3FB /* URL+Extension.swift */,
+				8151D31828C9207E00DEC3FB /* APIConstants.swift */,
+				8151D31E28C922B200DEC3FB /* Requests.swift */,
+				8151D32228C9278600DEC3FB /* SessionStorage.swift */,
+				8151D32728C929E600DEC3FB /* AppState.swift */,
+				81A5A77F28C94B34003EC692 /* AppColor.swift */,
+				8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */,
+				8151D31528C91F2B00DEC3FB /* NetworkService */,
+				8151D30728C8E27700DEC3FB /* LoginView */,
+				8151D30428C7FDAA00DEC3FB /* Athletes */,
 				8151D2D428C7486F00DEC3FB /* Assets.xcassets */,
 				8151D2D628C7486F00DEC3FB /* Preview Content */,
 			);
@@ -127,6 +181,65 @@
 			path = AtheletesUITests;
 			sourceTree = "<group>";
 		};
+		8151D30428C7FDAA00DEC3FB /* Athletes */ = {
+			isa = PBXGroup;
+			children = (
+				8151D30528C7FDE100DEC3FB /* AthletesView.swift */,
+				8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */,
+				8151D32028C9246F00DEC3FB /* AthleteDetail.swift */,
+			);
+			path = Athletes;
+			sourceTree = "<group>";
+		};
+		8151D30728C8E27700DEC3FB /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				8151D2FA28C752E000DEC3FB /* LoginView.swift */,
+				8151D31B28C9220B00DEC3FB /* ViewModel */,
+				8151D31A28C921FA00DEC3FB /* Model */,
+				8151D30828C8FBDB00DEC3FB /* View */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		8151D30828C8FBDB00DEC3FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8151D2FE28C7592900DEC3FB /* PasswordField.swift */,
+				8151D30228C7FAF200DEC3FB /* UserNameField.swift */,
+				81A5A77D28C93ED0003EC692 /* LoginButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8151D31528C91F2B00DEC3FB /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				8151D30D28C90E5700DEC3FB /* NetworkService.swift */,
+				8151D30F28C90EBD00DEC3FB /* Request.swift */,
+				8151D31328C9178800DEC3FB /* RequestError.swift */,
+				8151D31128C911D900DEC3FB /* HTTPMethod.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		8151D31A28C921FA00DEC3FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8151D31C28C9222C00DEC3FB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8151D31B28C9220B00DEC3FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8151D2FC28C7574900DEC3FB /* LoginViewModel.swift */,
+				8151D32928C92A7900DEC3FB /* AuthenticationService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +256,9 @@
 			dependencies = (
 			);
 			name = Atheletes;
+			packageProductDependencies = (
+				8151D32528C928CB00DEC3FB /* SwiftKeychainWrapper */,
+			);
 			productName = Atheletes;
 			productReference = 8151D2CD28C7486A00DEC3FB /* Atheletes.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +331,9 @@
 				Base,
 			);
 			mainGroup = 8151D2C428C7486A00DEC3FB;
+			packageReferences = (
+				8151D32428C928CB00DEC3FB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 8151D2CE28C7486A00DEC3FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +376,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8151D30E28C90E5700DEC3FB /* NetworkService.swift in Sources */,
+				8151D2FD28C7574900DEC3FB /* LoginViewModel.swift in Sources */,
+				8151D30328C7FAF200DEC3FB /* UserNameField.swift in Sources */,
+				8151D30628C7FDE100DEC3FB /* AthletesView.swift in Sources */,
+				8151D32128C9246F00DEC3FB /* AthleteDetail.swift in Sources */,
+				8151D31028C90EBD00DEC3FB /* Request.swift in Sources */,
+				81A5A78028C94B34003EC692 /* AppColor.swift in Sources */,
+				8151D32A28C92A7900DEC3FB /* AuthenticationService.swift in Sources */,
+				8151D32C28C9303800DEC3FB /* ViewModelFactory.swift in Sources */,
+				8151D31D28C9222C00DEC3FB /* User.swift in Sources */,
+				8151D32328C9278600DEC3FB /* SessionStorage.swift in Sources */,
+				8151D31728C9202B00DEC3FB /* URL+Extension.swift in Sources */,
+				81A5A77E28C93ED0003EC692 /* LoginButton.swift in Sources */,
+				8151D2FB28C752E000DEC3FB /* LoginView.swift in Sources */,
+				8151D32828C929E600DEC3FB /* AppState.swift in Sources */,
+				8151D31F28C922B200DEC3FB /* Requests.swift in Sources */,
 				8151D2D328C7486A00DEC3FB /* ContentView.swift in Sources */,
+				8151D31228C911D900DEC3FB /* HTTPMethod.swift in Sources */,
+				8151D31428C9178800DEC3FB /* RequestError.swift in Sources */,
+				8151D31928C9207E00DEC3FB /* APIConstants.swift in Sources */,
+				8151D2FF28C7592900DEC3FB /* PasswordField.swift in Sources */,
+				8151D30C28C8FD2F00DEC3FB /* AtheleteCardView.swift in Sources */,
 				8151D2D128C7486A00DEC3FB /* AtheletesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +723,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8151D32428C928CB00DEC3FB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8151D32528C928CB00DEC3FB /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8151D32428C928CB00DEC3FB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8151D2C528C7486A00DEC3FB /* Project object */;
 }

@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var vm: LoginViewModel
+    @EnvironmentObject var appState: Appstate
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if vm.sessionID == nil {
+            LoginView(submitLogin: { username, password in
+                Task {
+                    await vm.login(userName: username, password: password)
+                }
+            }, errorMessage: $vm.errorMessage)
+        } else {
+            AthletesView()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView().preferredColorScheme(.dark)
+//    }
+//}
