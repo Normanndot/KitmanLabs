@@ -29,6 +29,14 @@ class AthletesViewModel: ObservableObject {
             self.athlete = athleteResponse.compactMap {
                 var squads = ""
                 let squadIDs = $0.squadIDS
+//
+//                for squadID in squadIDs {
+//                    for squadDetail in squadResponse {
+//                        if squadID == squadDetail.id {
+//                            squads.append(squadDetail.name)
+//                        }
+//                    }
+//                }
 
                 for squadID in squadIDs {
                     if squadValues[squadID] == nil {

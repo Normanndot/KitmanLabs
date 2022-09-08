@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import Atheletes
+import ServiceHandler
 
 class AtheletesTests: XCTestCase {
 
@@ -26,10 +27,16 @@ class AtheletesTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
-    func testPerformanceExample() throws {
+    @MainActor func testPerformanceExample() throws {
         // This is an example of a performance test case.
+        let authService = AthletesService(service: NetworkService())
+        let storage = SquadService(service: NetworkService())
+        let vm = AthletesViewModel(athleteService: authService, squadService: storage)
         self.measure {
             // Put the code you want to measure the time of here.
+            Task {
+                await vm.fetchAthleteList()
+            }
         }
     }
 
