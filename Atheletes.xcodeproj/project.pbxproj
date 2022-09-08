@@ -148,16 +148,14 @@
 			children = (
 				8151D2D028C7486A00DEC3FB /* AtheletesApp.swift */,
 				8151D2D228C7486A00DEC3FB /* ContentView.swift */,
-				8151D31628C9202B00DEC3FB /* URL+Extension.swift */,
 				8151D31828C9207E00DEC3FB /* APIConstants.swift */,
 				8151D31E28C922B200DEC3FB /* Requests.swift */,
 				8151D32228C9278600DEC3FB /* SessionStorage.swift */,
-				8151D32728C929E600DEC3FB /* AppState.swift */,
-				81A5A77F28C94B34003EC692 /* AppColor.swift */,
 				8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */,
 				8151D31528C91F2B00DEC3FB /* NetworkService */,
 				8151D30728C8E27700DEC3FB /* LoginView */,
 				8151D30428C7FDAA00DEC3FB /* Athletes */,
+				81A5A78C28C9E4EC003EC692 /* Extensions */,
 				8151D2D428C7486F00DEC3FB /* Assets.xcassets */,
 				8151D2D628C7486F00DEC3FB /* Preview Content */,
 			);
@@ -274,6 +272,16 @@
 				81A5A78528C9BBE6003EC692 /* AthleteModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		81A5A78C28C9E4EC003EC692 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81A5A77F28C94B34003EC692 /* AppColor.swift */,
+				8151D32728C929E600DEC3FB /* AppState.swift */,
+				8151D31628C9202B00DEC3FB /* URL+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
