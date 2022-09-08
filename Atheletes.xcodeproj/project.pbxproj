@@ -20,10 +20,6 @@
 		8151D30328C7FAF200DEC3FB /* UserNameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30228C7FAF200DEC3FB /* UserNameField.swift */; };
 		8151D30628C7FDE100DEC3FB /* AthletesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30528C7FDE100DEC3FB /* AthletesView.swift */; };
 		8151D30C28C8FD2F00DEC3FB /* AtheleteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */; };
-		8151D30E28C90E5700DEC3FB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30D28C90E5700DEC3FB /* NetworkService.swift */; };
-		8151D31028C90EBD00DEC3FB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D30F28C90EBD00DEC3FB /* Request.swift */; };
-		8151D31228C911D900DEC3FB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31128C911D900DEC3FB /* HTTPMethod.swift */; };
-		8151D31428C9178800DEC3FB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31328C9178800DEC3FB /* RequestError.swift */; };
 		8151D31728C9202B00DEC3FB /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31628C9202B00DEC3FB /* URL+Extension.swift */; };
 		8151D31928C9207E00DEC3FB /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31828C9207E00DEC3FB /* APIConstants.swift */; };
 		8151D31D28C9222C00DEC3FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31C28C9222C00DEC3FB /* User.swift */; };
@@ -40,6 +36,9 @@
 		81A5A78428C9BA78003EC692 /* AthletesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78328C9BA77003EC692 /* AthletesService.swift */; };
 		81A5A78628C9BBE6003EC692 /* AthleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78528C9BBE6003EC692 /* AthleteModel.swift */; };
 		81A5A78828C9BEC6003EC692 /* AthleteProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78728C9BEC6003EC692 /* AthleteProfilePic.swift */; };
+		81A5A78F28CA01E2003EC692 /* ServiceHandler in Frameworks */ = {isa = PBXBuildFile; productRef = 81A5A78E28CA01E2003EC692 /* ServiceHandler */; };
+		81A5A79128CA0878003EC692 /* SquadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A79028CA0878003EC692 /* SquadService.swift */; };
+		81A5A79328CA08ED003EC692 /* SquadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A79228CA08ED003EC692 /* SquadDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +75,6 @@
 		8151D30228C7FAF200DEC3FB /* UserNameField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameField.swift; sourceTree = "<group>"; };
 		8151D30528C7FDE100DEC3FB /* AthletesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesView.swift; sourceTree = "<group>"; };
 		8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtheleteCardView.swift; sourceTree = "<group>"; };
-		8151D30D28C90E5700DEC3FB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		8151D30F28C90EBD00DEC3FB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		8151D31128C911D900DEC3FB /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		8151D31328C9178800DEC3FB /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		8151D31628C9202B00DEC3FB /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		8151D31828C9207E00DEC3FB /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		8151D31C28C9222C00DEC3FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -95,6 +90,8 @@
 		81A5A78328C9BA77003EC692 /* AthletesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesService.swift; sourceTree = "<group>"; };
 		81A5A78528C9BBE6003EC692 /* AthleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteModel.swift; sourceTree = "<group>"; };
 		81A5A78728C9BEC6003EC692 /* AthleteProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfilePic.swift; sourceTree = "<group>"; };
+		81A5A79028CA0878003EC692 /* SquadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadService.swift; sourceTree = "<group>"; };
+		81A5A79228CA08ED003EC692 /* SquadDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8151D32628C928CB00DEC3FB /* SwiftKeychainWrapper in Frameworks */,
+				81A5A78F28CA01E2003EC692 /* ServiceHandler in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +150,6 @@
 				8151D31E28C922B200DEC3FB /* Requests.swift */,
 				8151D32228C9278600DEC3FB /* SessionStorage.swift */,
 				8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */,
-				8151D31528C91F2B00DEC3FB /* NetworkService */,
 				8151D30728C8E27700DEC3FB /* LoginView */,
 				8151D30428C7FDAA00DEC3FB /* Athletes */,
 				81A5A78C28C9E4EC003EC692 /* Extensions */,
@@ -218,17 +215,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8151D31528C91F2B00DEC3FB /* NetworkService */ = {
-			isa = PBXGroup;
-			children = (
-				8151D30D28C90E5700DEC3FB /* NetworkService.swift */,
-				8151D30F28C90EBD00DEC3FB /* Request.swift */,
-				8151D31328C9178800DEC3FB /* RequestError.swift */,
-				8151D31128C911D900DEC3FB /* HTTPMethod.swift */,
-			);
-			path = NetworkService;
-			sourceTree = "<group>";
-		};
 		8151D31A28C921FA00DEC3FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				81A5A78328C9BA77003EC692 /* AthletesService.swift */,
+				81A5A79028CA0878003EC692 /* SquadService.swift */,
 				81A5A78128C9BA13003EC692 /* AthletesViewModel.swift */,
 			);
 			path = ViewModel;
@@ -269,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				8151D32028C9246F00DEC3FB /* AthlteDetail.swift */,
+				81A5A79228CA08ED003EC692 /* SquadDetail.swift */,
 				81A5A78528C9BBE6003EC692 /* AthleteModel.swift */,
 			);
 			path = Model;
@@ -302,6 +290,7 @@
 			name = Atheletes;
 			packageProductDependencies = (
 				8151D32528C928CB00DEC3FB /* SwiftKeychainWrapper */,
+				81A5A78E28CA01E2003EC692 /* ServiceHandler */,
 			);
 			productName = Atheletes;
 			productReference = 8151D2CD28C7486A00DEC3FB /* Atheletes.app */;
@@ -377,6 +366,7 @@
 			mainGroup = 8151D2C428C7486A00DEC3FB;
 			packageReferences = (
 				8151D32428C928CB00DEC3FB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				81A5A78D28CA01E2003EC692 /* XCRemoteSwiftPackageReference "ServiceHandler" */,
 			);
 			productRefGroup = 8151D2CE28C7486A00DEC3FB /* Products */;
 			projectDirPath = "";
@@ -420,13 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8151D30E28C90E5700DEC3FB /* NetworkService.swift in Sources */,
 				8151D2FD28C7574900DEC3FB /* LoginViewModel.swift in Sources */,
 				81A5A78428C9BA78003EC692 /* AthletesService.swift in Sources */,
 				8151D30328C7FAF200DEC3FB /* UserNameField.swift in Sources */,
 				8151D30628C7FDE100DEC3FB /* AthletesView.swift in Sources */,
 				8151D32128C9246F00DEC3FB /* AthlteDetail.swift in Sources */,
-				8151D31028C90EBD00DEC3FB /* Request.swift in Sources */,
 				81A5A78828C9BEC6003EC692 /* AthleteProfilePic.swift in Sources */,
 				81A5A78028C94B34003EC692 /* AppColor.swift in Sources */,
 				8151D32A28C92A7900DEC3FB /* AuthenticationService.swift in Sources */,
@@ -434,6 +422,7 @@
 				8151D31D28C9222C00DEC3FB /* User.swift in Sources */,
 				8151D32328C9278600DEC3FB /* SessionStorage.swift in Sources */,
 				8151D31728C9202B00DEC3FB /* URL+Extension.swift in Sources */,
+				81A5A79128CA0878003EC692 /* SquadService.swift in Sources */,
 				81A5A77E28C93ED0003EC692 /* LoginButton.swift in Sources */,
 				8151D2FB28C752E000DEC3FB /* LoginView.swift in Sources */,
 				8151D32828C929E600DEC3FB /* AppState.swift in Sources */,
@@ -441,10 +430,9 @@
 				81A5A78228C9BA13003EC692 /* AthletesViewModel.swift in Sources */,
 				8151D2D328C7486A00DEC3FB /* ContentView.swift in Sources */,
 				81A5A78628C9BBE6003EC692 /* AthleteModel.swift in Sources */,
-				8151D31228C911D900DEC3FB /* HTTPMethod.swift in Sources */,
-				8151D31428C9178800DEC3FB /* RequestError.swift in Sources */,
 				8151D31928C9207E00DEC3FB /* APIConstants.swift in Sources */,
 				8151D2FF28C7592900DEC3FB /* PasswordField.swift in Sources */,
+				81A5A79328CA08ED003EC692 /* SquadDetail.swift in Sources */,
 				8151D30C28C8FD2F00DEC3FB /* AtheleteCardView.swift in Sources */,
 				8151D2D128C7486A00DEC3FB /* AtheletesApp.swift in Sources */,
 			);
@@ -781,6 +769,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		81A5A78D28CA01E2003EC692 /* XCRemoteSwiftPackageReference "ServiceHandler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Normanndot/ServiceHandler";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -788,6 +784,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8151D32428C928CB00DEC3FB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
+		};
+		81A5A78E28CA01E2003EC692 /* ServiceHandler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81A5A78D28CA01E2003EC692 /* XCRemoteSwiftPackageReference "ServiceHandler" */;
+			productName = ServiceHandler;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

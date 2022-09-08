@@ -19,7 +19,7 @@ struct AtheleteCardView: View {
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                         .font(.largeTitle)
-                    Text("Staff, Active Roaster")
+                    Text(model.squad)
                         .foregroundColor(.white)
                         .fontWeight(.medium)
                         .font(.title)

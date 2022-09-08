@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ServiceHandler
 
 protocol AthleteServicing {
     func fetch() async throws -> [AthlteDetail]

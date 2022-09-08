@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ServiceHandler
 
 struct Requests {
     struct Authentication {
@@ -18,10 +19,8 @@ struct Requests {
         static func athletes() -> Request<[AthlteDetail]> {
             .init(url: .init(path: "/athletes")!, httpMethod: .get)
         }
-    }
 
-    struct Squads {
-        static func squads() -> Request<[AthlteDetail]> {
+        static func squads() -> Request<Squads> {
             .init(url: .init(path: "/squads")!, httpMethod: .get)
         }
     }

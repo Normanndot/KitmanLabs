@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ServiceHandler
 
 protocol Authenticatable {
     func authenticate(with userName: String, password: String) async throws -> User

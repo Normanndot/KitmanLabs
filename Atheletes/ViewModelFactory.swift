@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ServiceHandler
 
 class ViewModelFactory {
     private lazy var service: NetworkServiable = {
@@ -19,7 +20,8 @@ class ViewModelFactory {
 
     @MainActor
     func athletesViewModel() -> AthletesViewModel {
-        AthletesViewModel(service: AthletesService(service: service))
+        AthletesViewModel(athleteService: AthletesService(service: service),
+                          squadService: SquadService(service: service))
     }
 
 }
