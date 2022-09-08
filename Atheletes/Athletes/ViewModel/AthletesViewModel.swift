@@ -24,20 +24,25 @@ class AthletesViewModel: ObservableObject {
         do {
             let athleteResponse = try await athleteService.fetch()
             let squadResponse = try await squadService.fetch()
-//            var squadValues = [Int: String]()
+            var squadValues = [Int: String]()
 
             self.athlete = athleteResponse.compactMap {
                 var squads = ""
                 let squadIDs = $0.squadIDS
 
                 for squadID in squadIDs {
-                    for squadDetail in squadResponse {
-                        if squadID == squadDetail.id {
-                            squads.append(squadDetail.name)
+                    if squadValues[squadID] == nil {
+                        for squadDetail in squadResponse {
+                            if squadID == squadDetail.id {
+                                squadValues[squadID] = squadDetail.name
+                                squads += "\(squadDetail.name) "
+                                break
+                            }
                         }
+                    } else {
+                        squads += "\(squadValues[squadID] ?? "") "
                     }
                 }
-
 
                 return AthleteModel(name: $0.firstName + " " + $0.lastName,
                              id: $0.id,
