@@ -28,7 +28,7 @@
 		8151D31928C9207E00DEC3FB /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31828C9207E00DEC3FB /* APIConstants.swift */; };
 		8151D31D28C9222C00DEC3FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31C28C9222C00DEC3FB /* User.swift */; };
 		8151D31F28C922B200DEC3FB /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31E28C922B200DEC3FB /* Requests.swift */; };
-		8151D32128C9246F00DEC3FB /* AthleteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32028C9246F00DEC3FB /* AthleteDetail.swift */; };
+		8151D32128C9246F00DEC3FB /* AthlteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32028C9246F00DEC3FB /* AthlteDetail.swift */; };
 		8151D32328C9278600DEC3FB /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32228C9278600DEC3FB /* SessionStorage.swift */; };
 		8151D32628C928CB00DEC3FB /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 8151D32528C928CB00DEC3FB /* SwiftKeychainWrapper */; };
 		8151D32828C929E600DEC3FB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32728C929E600DEC3FB /* AppState.swift */; };
@@ -36,6 +36,10 @@
 		8151D32C28C9303800DEC3FB /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */; };
 		81A5A77E28C93ED0003EC692 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A77D28C93ED0003EC692 /* LoginButton.swift */; };
 		81A5A78028C94B34003EC692 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A77F28C94B34003EC692 /* AppColor.swift */; };
+		81A5A78228C9BA13003EC692 /* AthletesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78128C9BA13003EC692 /* AthletesViewModel.swift */; };
+		81A5A78428C9BA78003EC692 /* AthletesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78328C9BA77003EC692 /* AthletesService.swift */; };
+		81A5A78628C9BBE6003EC692 /* AthleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78528C9BBE6003EC692 /* AthleteModel.swift */; };
+		81A5A78828C9BEC6003EC692 /* AthleteProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5A78728C9BEC6003EC692 /* AthleteProfilePic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +84,17 @@
 		8151D31828C9207E00DEC3FB /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		8151D31C28C9222C00DEC3FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8151D31E28C922B200DEC3FB /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
-		8151D32028C9246F00DEC3FB /* AthleteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteDetail.swift; sourceTree = "<group>"; };
+		8151D32028C9246F00DEC3FB /* AthlteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthlteDetail.swift; sourceTree = "<group>"; };
 		8151D32228C9278600DEC3FB /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
 		8151D32728C929E600DEC3FB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		8151D32928C92A7900DEC3FB /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		8151D32B28C9303800DEC3FB /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		81A5A77D28C93ED0003EC692 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		81A5A77F28C94B34003EC692 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		81A5A78128C9BA13003EC692 /* AthletesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesViewModel.swift; sourceTree = "<group>"; };
+		81A5A78328C9BA77003EC692 /* AthletesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesService.swift; sourceTree = "<group>"; };
+		81A5A78528C9BBE6003EC692 /* AthleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteModel.swift; sourceTree = "<group>"; };
+		81A5A78728C9BEC6003EC692 /* AthleteProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteProfilePic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,9 +192,9 @@
 		8151D30428C7FDAA00DEC3FB /* Athletes */ = {
 			isa = PBXGroup;
 			children = (
-				8151D30528C7FDE100DEC3FB /* AthletesView.swift */,
-				8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */,
-				8151D32028C9246F00DEC3FB /* AthleteDetail.swift */,
+				81A5A78B28C9D4DE003EC692 /* Model */,
+				81A5A78A28C9D4D9003EC692 /* View */,
+				81A5A78928C9D4D0003EC692 /* ViewModel */,
 			);
 			path = Athletes;
 			sourceTree = "<group>";
@@ -195,9 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				8151D2FA28C752E000DEC3FB /* LoginView.swift */,
-				8151D31B28C9220B00DEC3FB /* ViewModel */,
 				8151D31A28C921FA00DEC3FB /* Model */,
 				8151D30828C8FBDB00DEC3FB /* View */,
+				8151D31B28C9220B00DEC3FB /* ViewModel */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -238,6 +246,34 @@
 				8151D32928C92A7900DEC3FB /* AuthenticationService.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		81A5A78928C9D4D0003EC692 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				81A5A78328C9BA77003EC692 /* AthletesService.swift */,
+				81A5A78128C9BA13003EC692 /* AthletesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		81A5A78A28C9D4D9003EC692 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8151D30528C7FDE100DEC3FB /* AthletesView.swift */,
+				8151D30B28C8FD2F00DEC3FB /* AtheleteCardView.swift */,
+				81A5A78728C9BEC6003EC692 /* AthleteProfilePic.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81A5A78B28C9D4DE003EC692 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8151D32028C9246F00DEC3FB /* AthlteDetail.swift */,
+				81A5A78528C9BBE6003EC692 /* AthleteModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,10 +414,12 @@
 			files = (
 				8151D30E28C90E5700DEC3FB /* NetworkService.swift in Sources */,
 				8151D2FD28C7574900DEC3FB /* LoginViewModel.swift in Sources */,
+				81A5A78428C9BA78003EC692 /* AthletesService.swift in Sources */,
 				8151D30328C7FAF200DEC3FB /* UserNameField.swift in Sources */,
 				8151D30628C7FDE100DEC3FB /* AthletesView.swift in Sources */,
-				8151D32128C9246F00DEC3FB /* AthleteDetail.swift in Sources */,
+				8151D32128C9246F00DEC3FB /* AthlteDetail.swift in Sources */,
 				8151D31028C90EBD00DEC3FB /* Request.swift in Sources */,
+				81A5A78828C9BEC6003EC692 /* AthleteProfilePic.swift in Sources */,
 				81A5A78028C94B34003EC692 /* AppColor.swift in Sources */,
 				8151D32A28C92A7900DEC3FB /* AuthenticationService.swift in Sources */,
 				8151D32C28C9303800DEC3FB /* ViewModelFactory.swift in Sources */,
@@ -392,7 +430,9 @@
 				8151D2FB28C752E000DEC3FB /* LoginView.swift in Sources */,
 				8151D32828C929E600DEC3FB /* AppState.swift in Sources */,
 				8151D31F28C922B200DEC3FB /* Requests.swift in Sources */,
+				81A5A78228C9BA13003EC692 /* AthletesViewModel.swift in Sources */,
 				8151D2D328C7486A00DEC3FB /* ContentView.swift in Sources */,
+				81A5A78628C9BBE6003EC692 /* AthleteModel.swift in Sources */,
 				8151D31228C911D900DEC3FB /* HTTPMethod.swift in Sources */,
 				8151D31428C9178800DEC3FB /* RequestError.swift in Sources */,
 				8151D31928C9207E00DEC3FB /* APIConstants.swift in Sources */,

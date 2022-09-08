@@ -8,10 +8,10 @@
 import Foundation
 
 // MARK: - AtheleteDetailElement
-struct AthleteDetail: Decodable {
+struct AthlteDetail: Decodable {
     let firstName, lastName: String
     let id: Int
-    let image: AtheleteImage
+    let image: AthleteImage
     let username: String
     let squadIDS: [Int]
 
@@ -24,6 +24,6 @@ struct AthleteDetail: Decodable {
 }
 
 // MARK: - Image
-struct AtheleteImage: Decodable {
+struct AthleteImage: Decodable {
     let url: String
 }

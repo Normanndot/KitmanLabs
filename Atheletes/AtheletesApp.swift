@@ -13,7 +13,8 @@ struct AtheletesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(vm: viewModelFactory.loginViewModel())
+            ContentView(vmlogin: viewModelFactory.loginViewModel(),
+                        vmathlete: viewModelFactory.athletesViewModel())
         }
     }
 }

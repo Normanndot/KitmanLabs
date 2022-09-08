@@ -15,13 +15,13 @@ struct Requests {
     }
 
     struct Athletes {
-        static func athletes() -> Request<[AthleteDetail]> {
+        static func athletes() -> Request<[AthlteDetail]> {
             .init(url: .init(path: "/athletes")!, httpMethod: .get)
         }
     }
 
     struct Squads {
-        static func squads() -> Request<[AthleteDetail]> {
+        static func squads() -> Request<[AthlteDetail]> {
             .init(url: .init(path: "/squads")!, httpMethod: .get)
         }
     }

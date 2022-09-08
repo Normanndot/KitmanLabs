@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var vm: LoginViewModel
+    @ObservedObject var vmlogin: LoginViewModel
+    @ObservedObject var vmathlete: AthletesViewModel
+
     @EnvironmentObject var appState: Appstate
 
     var body: some View {
-        if vm.sessionID == nil {
+        if vmlogin.sessionID == nil {
             LoginView(submitLogin: { username, password in
                 Task {
-                    await vm.login(userName: username, password: password)
+                    await vmlogin.login(userName: username, password: password)
                 }
-            }, errorMessage: $vm.errorMessage)
+            }, errorMessage: $vmlogin.errorMessage)
         } else {
-            AthletesView()
+            AthletesView(columns: [.init(spacing: 5)], vm: vmathlete)
         }
     }
 }

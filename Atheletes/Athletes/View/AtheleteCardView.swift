@@ -8,20 +8,14 @@
 import SwiftUI
 
 struct AtheleteCardView: View {
-    var detail: AthleteDetail
+    var model: AthleteModel
 
     var body: some View {
-        Image("login-bg")
-            .resizable()
-            .scaledToFit()
-            .cornerRadius(20)
-            .onTapGesture {
-                print("tap press")
-            }
+        AthleteProfilePic(profilePic: model.profileImage)
             .overlay {
                 VStack(alignment: .leading) {
                     Spacer()
-                    Text(detail.firstName + " " + detail.lastName)
+                    Text(model.name)
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                         .font(.largeTitle)
@@ -33,19 +27,12 @@ struct AtheleteCardView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
             }
-
     }
 }
 
 struct AtheleteCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AtheleteCardView(detail:
-                            AthleteDetail(firstName: "Norman",
-                                           lastName: "D",
-                                           id: 1964,
-                                           image: AtheleteImage(url: ""),
-                                           username: "normanndot",
-                                           squadIDS: [78,225]))
-        .previewLayout(.sizeThatFits)
+        AtheleteCardView(model: AthleteModel(name: "Norman D", id: 12, squad: "Staff, Roaster club", profileImage: "https://kitman.imgix.net/avatar.jpg"))
+            .previewLayout(.sizeThatFits)
     }
 }
