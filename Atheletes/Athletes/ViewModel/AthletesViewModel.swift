@@ -26,10 +26,11 @@ class AthletesViewModel: ObservableObject {
             let squadResponse = try await squadService.fetch()
             var squadValues = [Int: String]()
 
-            self.athlete = athleteResponse.compactMap {
+
+            self.athlete = athleteResponse.compactMap { detail in
                 var squads = ""
-                let squadIDs = $0.squadIDS
-//
+                let squadIDs = detail.squadIDS
+
 //                for squadID in squadIDs {
 //                    for squadDetail in squadResponse {
 //                        if squadID == squadDetail.id {
@@ -37,25 +38,37 @@ class AthletesViewModel: ObservableObject {
 //                        }
 //                    }
 //                }
+                
+                let sqaudList = Dictionary(uniqueKeysWithValues: zip(squadIDs, repeatElement(0, count: detail.squadIDS.count)))
 
-                for squadID in squadIDs {
-                    if squadValues[squadID] == nil {
-                        for squadDetail in squadResponse {
-                            if squadID == squadDetail.id {
-                                squadValues[squadID] = squadDetail.name
-                                squads += "\(squadDetail.name) "
-                                break
-                            }
+                for sd in squadResponse {
+                    if let _ = sqaudList[sd.id] {
+                        if squads == "" {
+                            squads = sd.name
+                        } else {
+                            squads = squads + ", " + sd.name
                         }
-                    } else {
-                        squads += "\(squadValues[squadID] ?? "") "
                     }
                 }
 
-                return AthleteModel(name: $0.firstName + " " + $0.lastName,
-                             id: $0.id,
-                             squad: squads,
-                             profileImage: $0.image.url)
+//                for squadID in squadIDs {
+//                    if squadValues[squadID] == nil {
+//                        for squadDetail in squadResponse {
+//                            if squadID == squadDetail.id {
+//                                squadValues[squadID] = squadDetail.name
+//                                squads += "\(squadDetail.name) "
+//                                break
+//                            }
+//                        }
+//                    } else {
+//                        squads += "\(squadValues[squadID] ?? "") "
+//                    }
+//                }
+
+                return AthleteModel(name: detail.firstName + " " + detail.lastName,
+                                    id: detail.id,
+                                    squad: squads,
+                                    profileImage: detail.image.url)
             }
         } catch {
             errorMessage = error.localizedDescription
